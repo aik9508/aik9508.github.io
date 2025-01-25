@@ -29,8 +29,7 @@ CON_FMT_STR="""
       * {journal}, {year}.
 """
 
-HEAD_STR="""
----
+HEAD_STR="""---
 layout: archive
 title: "Publications"
 permalink: /publications/
