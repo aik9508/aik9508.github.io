@@ -18,13 +18,13 @@ import numpy as np
 import os
 
 JOU_FMT_STR="""
-   ### J{idx}. [{title}]({doi})
+*  ### J{idx}. [{title}]({doi})
       * {authors}
       * {journal}, {year}.
 """
 
 CON_FMT_STR="""
-   ### C{idx}. [{title}]({doi})
+*  ### C{idx}. [{title}]({doi})
       * {authors}
       * {journal}, {year}.
 """
@@ -43,6 +43,9 @@ author_profile: true
 {% include base_path %}
 
 <br>
+
+
+
 Journal Articles
 ======
 (\* denotes corresponding authors)
