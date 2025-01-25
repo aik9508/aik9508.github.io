@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "王珂"
+title                    : "Ke Wang"
 title_separator          : "-"
-name                     : &name "王珂"
+name                     : &name "Ke Wang"
 description              : &description "personal description"
 url                      : https://aik9508.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,11 +22,11 @@ repository               : "aik9508/aik9508.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "王珂"
+  name             : "Ke Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D"
+  bio              : "Ph.D in Aerospace Engineering"
   location         : # "Earth"
-  employer         : "得克萨斯大学奥斯汀分校"
+  employer         : "The University of Texas at Austin"
   uri              : # URL
   email            : "kewang@utexas.edu" 
 
@@ -81,7 +81,7 @@ publication_category:
   manuscripts:
     title: 'Journal Articles'    
   conferences:
-    title: 'Conference Papers'
+    title: 'Refereed Conference Proceedings'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -247,14 +247,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  #- scope:
+  #    path: ""
+  #    type: teaching
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    share: true
+  #    comments: true
   # _publications
   - scope:
       path: ""
@@ -265,22 +265,22 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  #- scope:
+  #    path: ""
+  #    type: portfolio
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    share: true
+  #    comment: true
   # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  #- scope:
+  #    path: ""
+  #    type: talks
+  #  values:
+  #    layout: talk
+  #    author_profile: true
+  #    share: true
 
 
 # Sass/SCSS

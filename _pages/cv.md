@@ -11,54 +11,34 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Aerospace Engineering, the University of Texas at Austin, Texas, US, 2023
+* M.S. in Engineering, École Polytechnique, Palaiseau, France, 2018
+* B.S. in Physics, Nanjing University, Jiangsu, China, 2015
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2023-2025: Research Associate
+  * Suzhou Aerospace Information Research Institute
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Spring to Summer 2018: Internship
+  * Institut de Mécanique des Fluides de Toulouse, Toulouse, France
+  * Development of Computational Fluid Mechanics softwares
+  * Supervisor: Professor Dominique Legendre
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2017
+  * BeSport, Paris, France
+  * Development of BeSport Web Application
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming languages
+  * C++/CUDA
+  * Python
+  * Matlab
+* GIS Tools
+  * QGIS
+  * Google Earth Studio
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+   {% include publications_cv.md %}
