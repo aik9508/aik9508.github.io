@@ -113,8 +113,10 @@ def join_authors(authors):
     s = authors[0]
     for i in range(1,len(authors)-1):
         s = s + ', '+ authors[i]
-    if len(authors) > 1:
+    if len(authors) > 2:
         s = s + ' and ' + authors[-1]
+    else:
+        s = s + ', and ' + authors[-1]
     return s
 
 def entry_to_md(e,idx,style="pub"):

@@ -36,7 +36,7 @@ Journal Articles
       * IEEE Transactions on Geoscience and Remote Sensing, 2022.
 
 *  ### J2. [Accurate Persistent Scatterer Identification Based on Phase Similarity of Radar Pixels](https://10.1109/TGRS.2022.3210868)
-      * **Ke Wang**\* and Jingyi Chen\*
+      * **Ke Wang**\*, and Jingyi Chen\*
       * IEEE Transactions on Geoscience and Remote Sensing, 2022.
 
 *  ### J1. [A hybrid VOF-IBM method for the simulation of freezing liquid films and freezing drops](https://doi.org/10.1016/j.jcp.2021.110160)
@@ -47,11 +47,11 @@ Refereed Conference Proceedings
 ======
     
 *  ### C3. [A New Method for Reconstructing Decorrelated Insar Phase Measurements Over Densely Vegetated Natural Terrain](https://10.1109/IGARSS52108.2023.10282116)
-      * **Ke Wang**\* and Jingyi Chen
+      * **Ke Wang**\*, and Jingyi Chen
       * IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, 2023.
 
 *  ### C2. [Persistent Scatterer Selection based on Phase Similarity of Radar Pixels](https://10.1109/IGARSS46834.2022.9884255)
-      * **Ke Wang**\* and Jingyi Chen
+      * **Ke Wang**\*, and Jingyi Chen
       * IGARSS 2022 - 2022 IEEE International Geoscience and Remote Sensing Symposium, 2022.
 
 *  ### C1. [A New Algorithm for Estimating Surface Roughness Using Interferometric Synthetic Aperture Radar (InSAR) Data](https://10.1109/IGARSS39084.2020.9323083)

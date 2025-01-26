@@ -15,7 +15,7 @@
 
 *  J3. **Ke Wang**\*, Jingyi Chen, Amin Kiaghadi and Clint Dawson "[A New Algorithm for Land-Cover Classification Using PolSAR and InSAR Data and Its Application to Surface Roughness Mapping Along the Gulf Coast](https://10.1109/TGRS.2021.3083492)," IEEE Transactions on Geoscience and Remote Sensing, 2022.
 
-*  J2. **Ke Wang**\* and Jingyi Chen\* "[Accurate Persistent Scatterer Identification Based on Phase Similarity of Radar Pixels](https://10.1109/TGRS.2022.3210868)," IEEE Transactions on Geoscience and Remote Sensing, 2022.
+*  J2. **Ke Wang**\*, and Jingyi Chen\* "[Accurate Persistent Scatterer Identification Based on Phase Similarity of Radar Pixels](https://10.1109/TGRS.2022.3210868)," IEEE Transactions on Geoscience and Remote Sensing, 2022.
 
 *  J1. Sijia Lyu, **Ke Wang**, Zhentong Zhang, Annaïg Pedrono, Chao Sun and Dominique Legendre\* "[A hybrid VOF-IBM method for the simulation of freezing liquid films and freezing drops](https://doi.org/10.1016/j.jcp.2021.110160)," Journal of Computational Physics, 2021.
 
@@ -23,8 +23,8 @@
 
 
     
-*  C3. **Ke Wang**\* and Jingyi Chen "[A New Method for Reconstructing Decorrelated Insar Phase Measurements Over Densely Vegetated Natural Terrain](https://10.1109/IGARSS52108.2023.10282116)," IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, 2023.
+*  C3. **Ke Wang**\*, and Jingyi Chen "[A New Method for Reconstructing Decorrelated Insar Phase Measurements Over Densely Vegetated Natural Terrain](https://10.1109/IGARSS52108.2023.10282116)," IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, 2023.
 
-*  C2. **Ke Wang**\* and Jingyi Chen "[Persistent Scatterer Selection based on Phase Similarity of Radar Pixels](https://10.1109/IGARSS46834.2022.9884255)," IGARSS 2022 - 2022 IEEE International Geoscience and Remote Sensing Symposium, 2022.
+*  C2. **Ke Wang**\*, and Jingyi Chen "[Persistent Scatterer Selection based on Phase Similarity of Radar Pixels](https://10.1109/IGARSS46834.2022.9884255)," IGARSS 2022 - 2022 IEEE International Geoscience and Remote Sensing Symposium, 2022.
 
 *  C1. **Ke Wang**\*, Jingyi Chen, Amin Kiaghadi and Clint Dawson "[A New Algorithm for Estimating Surface Roughness Using Interferometric Synthetic Aperture Radar (InSAR) Data](https://10.1109/IGARSS39084.2020.9323083)," IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium, 2020.
