@@ -29,6 +29,14 @@ CON_FMT_STR="""
       * {journal}, {year}.
 """
 
+JOU_CV_FMT_STR="""
+*  J{idx}. {authors} "[{title}]({doi})," {journal}, {year}.
+"""
+
+CON_CV_FMT_STR="""
+*  C{idx}. {authors} "[{title}]({doi})," {journal}, {year}.
+"""
+
 HEAD_STR="""---
 layout: archive
 title: "Publications"
@@ -48,7 +56,17 @@ author_profile: true
 
 Journal Articles
 ======
-(\* denotes corresponding authors)
+(\* denotes corresponding authors, <sup>+</sup> denotes co-first authors)
+"""
+
+CV_HEAD_STR="""
+{% include base_path %}
+
+**Journal Articles**
+
+(\* denotes corresponding authors, <sup>+</sup> denotes co-first authors)
+
+
 """
 
 MYNAME = 'Ke Wang'
@@ -99,9 +117,12 @@ def join_authors(authors):
         s = s + ' and ' + authors[-1]
     return s
 
-def entry_to_md(e,idx):
+def entry_to_md(e,idx,style="pub"):
     doi = e.get('doi').value
-    url = "https://"+doi
+    if "http" in doi:
+        url = doi
+    else:
+        url = "https://"+doi
     title = e.get('title').value
     author_str = e.get('author').value
     authors = split_authors(author_str)
@@ -118,16 +139,30 @@ def entry_to_md(e,idx):
     marked_authors = add_marks(authors,corresponding_authors,
                                cofirst_authors)
     year = e.get('year').value
-    if e.entry_type == 'article':
-        journal = e.get('journal').value
-        s = JOU_FMT_STR.format(idx=idx,title=title,doi=url,
-                               authors=join_authors(marked_authors),
-                               journal=journal,year=year)
-    elif e.entry_type == 'inproceedings':
-        journal = e.get('booktitle').value
-        s = CON_FMT_STR.format(idx=idx,title=title,doi=url,
-                               authors=join_authors(marked_authors),
-                               journal=journal,year=year)
+    if style == "pub":
+        if e.entry_type == 'article':
+            journal = e.get('journal').value
+            s = JOU_FMT_STR.format(idx=idx,title=title,doi=url,
+                                   authors=join_authors(marked_authors),
+                                   journal=journal,year=year)
+        elif e.entry_type == 'inproceedings':
+            journal = e.get('booktitle').value
+            s = CON_FMT_STR.format(idx=idx,title=title,doi=url,
+                                   authors=join_authors(marked_authors),
+                                   journal=journal,year=year)
+    elif style == "cv":
+        if e.entry_type == 'article':
+            journal = e.get('journal').value
+            s = JOU_CV_FMT_STR.format(idx=idx,title=title,doi=url,
+                                   authors=join_authors(marked_authors),
+                                   journal=journal,year=year)
+        elif e.entry_type == 'inproceedings':
+            journal = e.get('booktitle').value
+            s = CON_CV_FMT_STR.format(idx=idx,title=title,doi=url,
+                                   authors=join_authors(marked_authors),
+                                   journal=journal,year=year)
+    else:
+        raise ValueError(f"Unrecognized style: {style}")
     return s
 
 if __name__ == '__main__':
@@ -147,7 +182,7 @@ if __name__ == '__main__':
     f = open(os.path.join('..','_pages','publications.md'),'w')
     f.write(HEAD_STR)
     for i,e in enumerate(journal_entries):
-        s = entry_to_md(e,njournal-i) 
+        s = entry_to_md(e,njournal-i,style='pub') 
         f.write(s)
         print(s)
     f.write("""
@@ -155,7 +190,24 @@ Refereed Conference Proceedings
 ======
     """)
     for i,e in enumerate(conference_entries):
-        s = entry_to_md(e,nconference-i)
+        s = entry_to_md(e,nconference-i,style='pub')
+        f.write(s)
+        print(s)
+    f.close()
+
+    f = open(os.path.join('..','_includes','publications_cv.md'),'w')
+    f.write(CV_HEAD_STR)
+    for i,e in enumerate(journal_entries):
+        s = entry_to_md(e,njournal-i,style='cv') 
+        f.write(s)
+        print(s)
+    f.write("""
+**Refereed Conference Proceedings**
+
+
+    """)
+    for i,e in enumerate(conference_entries):
+        s = entry_to_md(e,nconference-i,style='cv')
         f.write(s)
         print(s)
     f.close()
