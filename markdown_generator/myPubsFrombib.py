@@ -121,6 +121,8 @@ def join_authors(authors):
 
 def entry_to_md(e,idx,style="pub"):
     doi = e.get('doi').value
+    if not "doi" in doi:
+        doi = "doi.org/"+doi
     if "http" in doi:
         url = doi
     else:
