@@ -1,6 +1,6 @@
 ---
 title: "Flood Risk Analysis"
-excerpt: "Increase in inundated area if a storm surge like Hurricane Katrina were to hit New Orleans again in 2100. <br/><img src='/research-figure-3.png'>"
+excerpt: "Increase in inundated area if a storm surge like Hurricane Katrina were to hit New Orleans again in 2100. <br/><img src='/images/research-figure-3.png'>"
 collection: research
 ---
 
