@@ -1,5 +1,10 @@
 name: Scrape Talk Locations
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   push:
     paths:
