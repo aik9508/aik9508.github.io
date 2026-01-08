@@ -17,6 +17,8 @@ Education
 
 Work experience
 ======
+* 2025-present: Senoir Research Engineer
+  * Mystic Vison Laboratory, Wuhu Meiri Technology Co., Ltd
 * 2023-2025: Research Associate
   * Suzhou Aerospace Information Research Institute
 
